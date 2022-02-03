@@ -4,4 +4,8 @@
     <string name="button_left">Add</string>
     <string name="button_center">Delete</string>
     <string name="button_right">Reset</string>
+    <string name="change_activity">Go to second activity</string>
+    <string name="second_activityTitle">Second Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="count">%d раз нажата кнопка</string>
 </resources>
