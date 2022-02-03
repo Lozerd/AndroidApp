@@ -5,11 +5,46 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+
+    private fun getCurrentState(message: String){
+        Toast.makeText(this, "${lifecycle.currentState}, $message", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        getCurrentState("On start")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        getCurrentState("On resume")
+    }
+
+    override fun onPostResume() {
+        super.onPostResume()
+        getCurrentState("On post resume")
+    }
+
+    override fun onPause(){
+        super.onPause()
+        getCurrentState("On pause")
+    }
+
+    override fun onStop(){
+        super.onStop()
+        getCurrentState("On stop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        getCurrentState("On destroy")
     }
 
     fun add(view: View){

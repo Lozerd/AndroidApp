@@ -3,6 +3,7 @@ package com.example.androidapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import android.widget.Toolbar
 
 class SecondActivity : AppCompatActivity() {
@@ -26,6 +27,7 @@ class SecondActivity : AppCompatActivity() {
         }
         showTotalCount()
     }
+
 
     fun showTotalCount(){
         val count = intent.getIntExtra(TOTAL_COUNT, 0)
