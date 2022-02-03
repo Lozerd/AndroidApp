@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidApp</string>
+    <string name="counter_text">0</string>
+    <string name="button_left">Add</string>
+    <string name="button_center">Delete</string>
+    <string name="button_right">Reset</string>
+</resources>
